@@ -1,0 +1,82 @@
+.form{
+    background: #adcad6;
+    width: 40%;
+    margin: 0 auto;
+    padding: 10px 15px;
+    @media only screen 
+    and (min-device-width: 375px) 
+    and (max-device-width: 812px) 
+    and (-webkit-min-device-pixel-ratio: 3) { 
+        width: 90%;
+    }
+    &--title{
+        text-align: center;
+        margin: 30px;
+        color: rgb(56, 56, 56);
+    }
+    &--element{
+        width: 45%;
+        display: inline-block;
+        padding: 10px;
+        @media only screen 
+        and (min-device-width: 375px) 
+        and (max-device-width: 812px) 
+        and (-webkit-min-device-pixel-ratio: 3) { 
+            width: 90%;
+            padding: 10px 5px;
+        }
+        label{
+            font-size: 14px;
+            font-weight: 700;
+            margin: 5px 0;
+            letter-spacing: 1px;
+            display: block;
+        }
+        input{
+            display: block;
+            width: 100%;
+            border:none;
+            height: 30px;
+            padding: 5px;
+            outline: none;
+        }
+    }
+    input[type=submit]{
+        background: rgb(56, 56, 56);
+        border:none;
+        color:white;
+        text-align: center;
+        margin:15px auto;
+        width: 40%;
+        display: block;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 1px;
+        padding:10px 0;
+        cursor: pointer;
+        transition: all .5s ease-in;
+        -webkit-transition: all .5s ease-in;
+        @media only screen 
+        and (min-device-width: 375px) 
+        and (max-device-width: 812px) 
+        and (-webkit-min-device-pixel-ratio: 3) { 
+            width: 90%;
+            padding: 10px 5px;
+            margin: 25px 10px;
+        }
+        &:hover{
+            background: gray;
+            color:rgb(56, 56, 56);
+        }
+    }
+}
+.succesMessage{
+    background:rgb(226, 255, 236);
+    margin: 20px auto;
+    width: 200px;
+    padding:8px 5px;
+    display: block;
+    span{
+        color: #000;
+    }
+}
